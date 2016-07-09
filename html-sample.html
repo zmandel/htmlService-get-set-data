@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<script>
+
+    /**
+    * getDataFromHtml
+    *
+    * Inputs
+    * idData: optional. id for the data element. defaults to "mydata_htmlservice"
+    *
+    * Returns
+    * The stored data object
+    */
+    function getDataFromHtml(idData) {
+        if (!idData)
+            idData = "mydata_htmlservice";
+        var dataEncoded = document.getElementById(idData).innerHTML;
+        var data = JSON.parse(atob(dataEncoded));
+        return data;
+    }
+
+
+    // sample usage of getDataFromHtml
+    function initialize() {
+        var data = getDataFromHtml();
+        document.getElementById("myTitle").innerHTML = data.first + " - " + data.last;
+        //or use jquery:  $("#myTitle").text(data.first + " - " + data.last);
+    }
+
+    // use onload or use jquery to call your initialization after the document loads
+    window.onload = initialize;
+</script>
+
+
+<html>
+<body>
+    <H2 id="myTitle"></H2>
+</body>
+</html>
