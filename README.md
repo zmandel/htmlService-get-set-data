@@ -9,9 +9,9 @@ Zig Mandel https://developers.google.com/experts/people/zig-mandel
 Free to use under the MIT Licence https://opensource.org/licenses/MIT
 
 # Usage
-Simply copy these two functions to your apps script project files.
+Simply copy these two functions to your apps script project files.<br>
 **appendDataToHtmlOutput**: append a javascript object to an htmlOutput. Use from a .gs file. Sample: 'doGet' in code.gs
-**getDataFromHtml**: get your stored data. Use from a html file script. Sample: 'initialize' in html-sample.html
+<br>**getDataFromHtml**: get your stored data. Use from a html file script. Sample: 'initialize' in html-sample.html
 
 # Working sample script (identical to this repo)
 https://script.google.com/d/1bXkZpXnFlw9PUc10ecnb7Scq6ubXfGIrFy8xj33ffen4hw5s-STABaZY/edit?usp=sharing
