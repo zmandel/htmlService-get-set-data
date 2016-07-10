@@ -6,7 +6,7 @@ Free to use under the MIT Licence https://opensource.org/licenses/MIT
 
 # Usage
 Simply copy these two functions to your apps script project files.<br>
-**appendDataToHtmlOutput**: append a javascript object to an htmlOutput. Use from a .gs file. Sample: 'doGet' in code.gs
+**appendDataToHtmlOutput**: append a javascript object to an HtmlOutput. Use from a .gs file. Sample: 'doGet' in code.gs
 <br>**getDataFromHtml**: get your stored data. Use from a html file script. Sample: 'initialize' in html-sample.html
 
 # Working sample script (identical to this repo)
