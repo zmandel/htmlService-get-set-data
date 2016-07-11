@@ -1,5 +1,8 @@
 # htmlService-get-set-data
-for Google Apps Script [HtmlService](https://developers.google.com/apps-script/guides/html/). Set and get a data object on an [HtmlOutput](https://developers.google.com/apps-script/reference/html/html-output) or [HtmlTemplate](https://developers.google.com/apps-script/reference/html/html-template). It safely stores any serializable javascript object and takes care of possible issues regarding security (code injection) and formatting (conflicts with html special characters in data)
+Send initialization data from server .gs to client .html.
+<br>For Google Apps Script [HtmlService](https://developers.google.com/apps-script/guides/html/).
+<br>Two different ways for [HtmlOutput](https://developers.google.com/apps-script/reference/html/html-output) and [HtmlTemplate](https://developers.google.com/apps-script/reference/html/html-template).
+<br>Both methods safely store any (serializable) javascript object taking care of possible issues regarding security (code injection) or formatting (conflicts with html special characters in the data).
 
 # Licence
 Free to use under the MIT Licence https://opensource.org/licenses/MIT
