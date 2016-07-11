@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<script>
+    var data = <?!= JSON.stringify(dataFromServerTemplate) ?>; //Stores the data directly in the javascript code
+
+    // sample usage
+    function initialize() {
+        document.getElementById("myTitle").innerText = data.first + " - " + data.last;
+        //or use jquery:  $("#myTitle").text(data.first + " - " + data.last);
+    }
+
+    // use onload or use jquery to call your initialization after the document loads
+    window.onload = initialize;
+</script>
+
+
+<html>
+<body>
+    <H2 id="myTitle"></H2>
+</body>
+</html>
