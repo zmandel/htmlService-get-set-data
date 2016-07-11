@@ -3,6 +3,8 @@ Send initialization data from server .gs to client .html.
 <br>For Google Apps Script [HtmlService](https://developers.google.com/apps-script/guides/html/).
 <br>Two different ways for [HtmlOutput](https://developers.google.com/apps-script/reference/html/html-output) and [HtmlTemplate](https://developers.google.com/apps-script/reference/html/html-template).
 <br>Both methods safely store any (serializable) javascript object taking care of possible issues regarding security (code injection) or formatting (conflicts with html special characters in the data).
+<br>
+<br>Both methods are more efficient than having the client call the server to get the data after your initial Javasctipt+html skeleton loads in the client, which requires an aditional client-side call. See [google.script.run](https://developers.google.com/apps-script/guides/html/reference/run). You can use google.script.run to further communicate with the server (after a user action for example).
 
 # Licence
 Free to use under the MIT Licence https://opensource.org/licenses/MIT
@@ -19,9 +21,9 @@ Two different ways to send initialization data to your html (server to client).
 <br>
 <br>
 **Method #2, without templates**
-<br>This method only uses htmlOutput which modifies by adding a new hidden element containing the data.
-<br>How? data is stored serialized plus base64 to avoid conflicts with special HTML characters or code injection.
-<br>Advantages: does not require to use templates.
+<br>This method only uses htmlOutput.
+<br>How? Stored in an appended, hidden div. Data is stringified plus encoded in base64 to avoid conflicts with special HTML characters.
+<br>Advantages: does not require templates.
 <br>Disadvantages: If the data is very large, it will increase the HTML file size (about 33% overhead of data size in html compared with method #1).
 <br>Sample: doGetWithHtmlOutput in output-server.gs and output-client.html.
 * appendDataToHtmlOutput: append a javascript object to an htmlOutput from your .gs file.
