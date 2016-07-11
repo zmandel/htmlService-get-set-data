@@ -1,5 +1,5 @@
 # htmlService-get-set-data
-Send initialization data from server .gs to client .html.
+Send an initialization data object from server .gs to client .html.
 <br>For Google Apps Script [HtmlService](https://developers.google.com/apps-script/guides/html/).
 <br>
 <br>This github contains simple, small functions and samples you can copy and paste to your projects.
@@ -7,7 +7,7 @@ Send initialization data from server .gs to client .html.
 <br>Two different methods: for [HtmlOutput](https://developers.google.com/apps-script/reference/html/html-output) and [HtmlTemplate](https://developers.google.com/apps-script/reference/html/html-template).
 <br>Both methods safely store any (serializable) javascript object taking care of possible issues regarding security (code injection) or formatting (conflicts with html special characters in the data).
 <br>
-<br>Both methods are more efficient than having the client call the server to get the data after your initial Javasctipt+html skeleton loads in the client, which requires an aditional client-side call. See [google.script.run](https://developers.google.com/apps-script/guides/html/reference/run). You can use google.script.run to further communicate with the server (after a user action for example).
+<br>Both methods are more efficient than having the client call the server to get the data object after your initial Javasctipt+html skeleton loads in the client, which requires an aditional client-side call. See [google.script.run](https://developers.google.com/apps-script/guides/html/reference/run). You can use google.script.run to further communicate with the server (after a user action for example).
 
 # Licence
 Free to use under the MIT Licence https://opensource.org/licenses/MIT
