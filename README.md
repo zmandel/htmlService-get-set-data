@@ -7,14 +7,14 @@ Free to use under the MIT Licence https://opensource.org/licenses/MIT
 # Usage
 Two different ways to send initialization data to your html (server to client).
 <br>
-Method #1, using templates:
+**Method #1, using templates**
 <br>How? Sets a template variable, then evaluates the template.
 <br>Advantages: if data is very large, this might be more efficient as it copies less data to the html output.
 <br>Disadvantages: requires to evaluate the template first (might be more server overhead).
 <br>Sample: doGetWithTemplates in template-server.gs and template-client.html.
 <br>
 <br>
-Method #2, without templates.
+**Method #2, without templates**
 <br>This method only uses htmlOutput, which it modifies by adding a new hidden element containing your data.
 <br>How? data is stored to avoid conflicts with special HTML characters or code injection.
 <br>Advantages: does not require to use templates.
