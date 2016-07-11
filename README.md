@@ -17,7 +17,7 @@ Free to use under the MIT Licence https://opensource.org/licenses/MIT
 <br>How? Sets a template variable from .gs, then evaluates the template, which inserts the variable inside html javascript.
 <br>Advantages: if data is very large, this might be more efficient as it copies less data to the html output.
 <br>Disadvantages: requires to evaluate the template first (might be more server overhead). This disadvantage is not relevant if you are already using templates.
-<br>Sample: doGetWithTemplates in template-server.gs and template-client.html.
+<br>Sample: doGetWithTemplates in [template-server.gs](https://github.com/zmandel/htmlService-get-set-data/blob/master/with-HtmlTemplate/template-server.gs) and [template-client.html](https://github.com/zmandel/htmlService-get-set-data/blob/master/with-HtmlTemplate/template-client.html).
 <br>
 <br>
 **Method #2, without templates**
@@ -25,7 +25,7 @@ Free to use under the MIT Licence https://opensource.org/licenses/MIT
 <br>How? Stored in an appended, hidden div. Data is stringified plus encoded in base64 to avoid conflicts with special HTML characters.
 <br>Advantages: does not require templates.
 <br>Disadvantages: If the data is very large, it will increase the HTML file size (about 33% overhead of data size in html compared with method #1).
-<br>Sample: doGetWithHtmlOutput in output-server.gs and output-client.html.
+<br>Sample: doGetWithHtmlOutput in [output-server.gs](https://github.com/zmandel/htmlService-get-set-data/blob/master/with-HtmlOutput/output-server.gs) and [output-client.html](https://github.com/zmandel/htmlService-get-set-data/blob/master/with-HtmlOutput/output-client.html).
 * appendDataToHtmlOutput: append a javascript object to an htmlOutput from your .gs file.
 * getDataFromHtml: call it from your html file script to get your stored data
 
