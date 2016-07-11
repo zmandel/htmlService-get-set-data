@@ -8,18 +8,18 @@ Free to use under the MIT Licence https://opensource.org/licenses/MIT
 Two different ways to send initialization data to your html (server to client).
 <br>
 Method #1, using templates:
-How? Sets a template variable, then evaluates the template.
-Advantages: if data is very large, this might be more efficient as it copies less data to the html output.
-disadvantages: requires to evaluate the template first (might be more server overhead).
-Sample: doGetWithTemplates in template-server.gs and template-client.html.
+<br>How? Sets a template variable, then evaluates the template.
+<br>Advantages: if data is very large, this might be more efficient as it copies less data to the html output.
+<br>Disadvantages: requires to evaluate the template first (might be more server overhead).
+<br>Sample: doGetWithTemplates in template-server.gs and template-client.html.
 <br>
 <br>
 Method #2, without templates.
-This method only uses htmlOutput, which it modifies by adding a new hidden element containing your data.
-How? data is stored to avoid conflicts with special HTML characters or code injection.
-Advantages: does not require to use templates.
-Disadvantages: If the data is very large, it will increase the HTML file size (about 30% overhead in the stored data).
-Sample: doGetWithHtmlOutput in output-server.gs and output-client.html.
+<br>This method only uses htmlOutput, which it modifies by adding a new hidden element containing your data.
+<br>How? data is stored to avoid conflicts with special HTML characters or code injection.
+<br>Advantages: does not require to use templates.
+<br>Disadvantages: If the data is very large, it will increase the HTML file size (about 30% overhead in the stored data).
+<br>Sample: doGetWithHtmlOutput in output-server.gs and output-client.html.
 * appendDataToHtmlOutput: append a javascript object to an htmlOutput from your .gs file.
 * getDataFromHtml: call it from your html file script to get your stored data
 
