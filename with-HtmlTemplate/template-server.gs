@@ -2,7 +2,7 @@
 // sample usage with templates
 // does not use appendDataToHtmlOutput
 function doGetWithTemplates() {
-    var htmlTemplate = HtmlService.createTemplateFromFile('template-client');
+    var htmlTemplate = HtmlService.createTemplateFromFile('template-client.html');
 
     htmlTemplate.dataFromServerTemplate = { first: "hello", last: "world" };
 
