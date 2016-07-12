@@ -25,7 +25,7 @@ function appendDataToHtmlOutput(data, htmlOutput, idData) {
 
 // sample usage of appendDataToHtmlOutput
 function doGetWithHtmlOutput() {
-    var htmlOutput = HtmlService.createHtmlOutputFromFile('html-sample')
+    var htmlOutput = HtmlService.createHtmlOutputFromFile('output-client.html')
         .setSandboxMode(HtmlService.SandboxMode.IFRAME)
         .setTitle('sample');
 
