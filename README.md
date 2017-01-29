@@ -33,4 +33,4 @@ Free to use under the MIT Licence https://opensource.org/licenses/MIT
 https://script.google.com/d/1bXkZpXnFlw9PUc10ecnb7Scq6ubXfGIrFy8xj33ffen4hw5s-STABaZY/edit?usp=sharing
 
 # Author
-Zig Mandel https://developers.google.com/experts/people/zig-mandel
+Zig Mandel https://developers.google.com/experts/people/sigmund-zig-mandel
