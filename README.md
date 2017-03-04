@@ -24,7 +24,7 @@ Free to use under the MIT Licence https://opensource.org/licenses/MIT
 <br>This method only uses htmlOutput.
 <br>How? Stored in an appended, hidden div. Data is stringified plus encoded in base64 to avoid conflicts with special HTML characters.
 <br>Advantages: does not require templates.
-<br>Disadvantages: If the data is very large, it will increase the HTML file size (about 33% overhead of data size in html compared with method #1).
+<br>Disadvantages: If the data is very large, it will increase the HTML file size (about 33% overhead of data size in html compared with method #1). If that is a concern (when passing huge objects) you may use base94 or even base128 encoding but requires more code and can have issues, see http://stackoverflow.com/questions/6008047/why-dont-people-use-base128
 <br>Sample: doGetWithHtmlOutput in [output-server.gs](https://github.com/zmandel/htmlService-get-set-data/blob/master/with-HtmlOutput/output-server.gs) and [output-client.html](https://github.com/zmandel/htmlService-get-set-data/blob/master/with-HtmlOutput/output-client.html).
 * appendDataToHtmlOutput: append a javascript object to an htmlOutput from your .gs file.
 * getDataFromHtml: call it from your html file script to get your stored data
